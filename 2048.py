@@ -94,3 +94,6 @@ while not (f==tilt_field(f,"w")==tilt_field(f,"a")
         sys.exit(1)
 pprint(f)
 print("you lose")
+
+def totallyPointlessFunction(n):
+	return n + 2

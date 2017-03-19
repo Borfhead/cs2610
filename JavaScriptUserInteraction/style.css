@@ -1,0 +1,106 @@
+#fib { 
+		display: inline-block;
+		width: 20000px;
+       text-align:center; 
+       background-color: #90b4ed; 
+	}  
+	
+    .fib-left {  
+       float: left; 
+       display: inline-block; 
+       margin-right: 4px; 
+       text-align:center; 
+    } 
+     
+    .fib-right {  
+       float:right; 
+       display: inline-block; 
+       margin-left: 4px; 
+       text-align:center; 
+    } 
+    .fib-box {  
+		font-family: 'helvetica neue', helvetica, sans-serif;  
+		letter-spacing: 1px;  
+		text-transform: capitalize;  
+		text-align: center;  
+		padding: 3px 10px;  
+		margin: 10px;  
+		cursor: pointer;  
+		border-radius: 10px;  
+		border-width: 2px;  
+		border-style: solid;  
+	} 
+     
+    #pell {  
+		display: inline-block;  
+		width: 20000px;  
+       text-align:center; 
+       background-color: #7efcac; 
+	}  
+	  
+    .pell-left {  
+       float: left; 
+       display: inline-block; 
+       margin-right: 4px; 
+       text-align:center; 
+    } 
+     
+    .pell-right {  
+       float: right; 
+       display: inline-block; 
+       margin-left: 4px; 
+       text-align:center; 
+    } 
+    .pell-box {  
+		font-family: 'helvetica neue', helvetica, sans-serif;  
+		letter-spacing: 1px;  
+		text-transform: capitalize;  
+		text-align: center;  
+		padding: 3px 10px;  
+		margin: 10px;  
+		cursor: pointer;  
+		border-radius: 10px;  
+		border-width: 2px;  
+		border-style: solid;  
+	} 
+	 
+	#trib {  
+		display: inline-block;  
+		width: 20000px;  
+       text-align:center; 
+       background-color: #ff7575; 
+	}  
+	  
+    .trib-left {  
+       float: left; 
+       display: inline-block; 
+       margin-right: 4px; 
+       text-align:center; 
+       width: 33%; 
+    } 
+     
+    .trib-center { 
+       display: inline-block; 
+       margin: 4px; 
+       width: 33% 
+    } 
+     
+    .trib-right {  
+       float:right; 
+       display: inline-block; 
+       margin-left: 4px; 
+       text-align:center; 
+       width: 33%; 
+    } 
+    .trib-box {  
+		font-family: 'helvetica neue', helvetica, sans-serif;  
+		letter-spacing: 1px;  
+		text-transform: capitalize;  
+		text-align: center;  
+		padding: 3px 10px;  
+		margin: 10px;  
+		cursor: pointer;  
+		border-radius: 10px;  
+		border-width: 2px;  
+		border-style: solid;  
+	}

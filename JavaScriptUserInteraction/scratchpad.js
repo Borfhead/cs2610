@@ -42,7 +42,7 @@ var fib = function(num, node)
     var tree = fibhelper(num);
     node.appendChild(tree.html);
     node.setAttribute('id', 'fib');
-}
+};
 
 function pellHelper(n)
 {
@@ -88,7 +88,7 @@ var pell = function(num, node)
     var tree = pellHelper(num);
     node.appendChild(tree.html);
     node.setAttribute('id', 'pell');
-}
+};
 
 
 function tribHelper(n)
@@ -141,8 +141,31 @@ var trib = function(num, node)
     var tree = tribHelper(num);
     node.appendChild(tree.html);
     node.setAttribute('id', 'trib');
-}
+};
 
+
+//Creates the slider that changes the fib section
+var fibSlider = document.createElement("INPUT");
+fibSlider.setAttribute('type', 'range');
+fibSlider.setAttribute('value', '6');
+fibSlider.setAttribute('min', 1);
+fibSlider.setAttribute('max', 11);
+fibSlider.onchange = function(){
+    var btn = document.getElementById('fibButton');
+    btn.childNodes[0].nodeValue = "Fib(" +fibSlider.value+ ")";
+};
+document.body.appendChild(fibSlider);
+
+//Creates the button to update the fib section
+var fibButton = document.createElement("BUTTON");
+var btnText = document.createTextNode("Fib(" +fibSlider.value+ ")");
+fibButton.appendChild(btnText);
+fibButton.setAttribute('id', 'fibButton');
+fibButton.onclick = function(){
+    document.querySelector('.fib-box').innerHTML = "";
+    fib(fibSlider.value, document.querySelector('.fib-box'));
+};
+document.body.appendChild(fibButton);
 
 var fibdiv = document.createElement('div');
 fibdiv.setAttribute("class", "fib-box");
@@ -156,6 +179,6 @@ var tribdiv = document.createElement('div');
 tribdiv.setAttribute("class", "trib-box");
 document.body.appendChild(tribdiv);
 
-fib(6, document.querySelector('.fib-box'));
+fib(fibSlider.value, document.querySelector('.fib-box'));
 pell(6, document.querySelector('.pell-box'));
 trib(6, document.querySelector('.trib-box'));

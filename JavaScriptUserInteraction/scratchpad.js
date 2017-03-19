@@ -167,18 +167,66 @@ fibButton.onclick = function(){
 };
 document.body.appendChild(fibButton);
 
+
 var fibdiv = document.createElement('div');
 fibdiv.setAttribute("class", "fib-box");
 document.body.appendChild(fibdiv);
 
+
+//Creates the slider to update the pell section
+var pellSlider = document.createElement("INPUT");
+pellSlider.setAttribute('type', 'range');
+pellSlider.setAttribute('value', '6');
+pellSlider.setAttribute('min', 1);
+pellSlider.setAttribute('max', 11);
+pellSlider.onchange = function(){
+    var btn = document.getElementById('pellButton');
+    btn.childNodes[0].nodeValue = "pell(" +pellSlider.value+ ")";
+};
+document.body.appendChild(pellSlider);
+
+//Creates the button to update the pell section
+var pellButton = document.createElement("BUTTON");
+var btnText = document.createTextNode("pell(" +pellSlider.value+ ")");
+pellButton.appendChild(btnText);
+pellButton.setAttribute('id', 'pellButton');
+pellButton.onclick = function(){
+    document.querySelector('.pell-box').innerHTML = "";
+    pell(pellSlider.value, document.querySelector('.pell-box'));
+};
+document.body.appendChild(pellButton);
+
 var pelldiv = document.createElement('div');
 pelldiv.setAttribute("class", "pell-box");
 document.body.appendChild(pelldiv);
+
+//Creates the slider to update the trib section
+var tribSlider = document.createElement("INPUT");
+tribSlider.setAttribute('type', 'range');
+tribSlider.setAttribute('value', '6');
+tribSlider.setAttribute('min', 1);
+tribSlider.setAttribute('max', 11);
+tribSlider.onchange = function(){
+    var btn = document.getElementById('tribButton');
+    btn.childNodes[0].nodeValue = "trib(" +tribSlider.value+ ")";
+};
+document.body.appendChild(tribSlider);
+
+//Creates the button to update the trib section
+var tribButton = document.createElement("BUTTON");
+var btnText = document.createTextNode("trib(" +tribSlider.value+ ")");
+tribButton.appendChild(btnText);
+tribButton.setAttribute('id', 'tribButton');
+tribButton.onclick = function(){
+    document.querySelector('.trib-box').innerHTML = "";
+    trib(tribSlider.value, document.querySelector('.trib-box'));
+};
+document.body.appendChild(tribButton);
 
 var tribdiv = document.createElement('div');
 tribdiv.setAttribute("class", "trib-box");
 document.body.appendChild(tribdiv);
 
 fib(fibSlider.value, document.querySelector('.fib-box'));
-pell(6, document.querySelector('.pell-box'));
-trib(6, document.querySelector('.trib-box'));
+pell(pellSlider.value, document.querySelector('.pell-box'));
+trib(tribSlider.value, document.querySelector('.trib-box'));

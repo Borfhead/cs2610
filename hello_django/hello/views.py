@@ -5,4 +5,4 @@ from time import gmtime, strftime
 
 def index(response):
     time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
-    return HttpResponse('Hello World! Time is: ' +time)
+    return HttpResponse('Hello World! Date and time is: ' +time)

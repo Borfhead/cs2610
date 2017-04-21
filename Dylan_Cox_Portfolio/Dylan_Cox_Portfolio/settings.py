@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [u'cs2610-dylancox.c9users.io']
 # Application definition
 
 INSTALLED_APPS = [
+    'portfolio.apps.PortfolioConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

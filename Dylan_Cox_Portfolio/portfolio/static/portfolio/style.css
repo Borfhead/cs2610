@@ -1,0 +1,55 @@
+#toolbar{
+    background-color: black;
+    color: white;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    line-height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+#social-wrapper{
+    background-color: black;
+    float: right;
+    margin: auto;
+    z-index: 8888;
+    position: fixed;
+    right: 0;
+}
+
+#social{
+    display: block;
+    float:right;
+    list-style: none;
+    margin: auto;
+    padding-right: 20px;
+}
+
+.facebook, .linkedin, .github{
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#fb_icon, #in_icon, #gh_icon{
+    border-radius: 50%;
+    max-width: 86px;
+    height: 40px;
+    margin: auto;
+}
+
+
+
+body{
+    text-align: center;
+    margin: auto;
+}
+
+div{
+    margin: auto;
+}

@@ -26,3 +26,10 @@ function unhover(element, newSrc){
             break;
     }
 }
+
+function initPadding(){
+    var padAmount = document.getElementById("toolbar").offsetHeight;
+    document.getElementById("about").style.paddingTop = padAmount+"px";
+}
+
+initPadding();

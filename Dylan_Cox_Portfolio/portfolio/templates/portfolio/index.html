@@ -8,29 +8,40 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
-        <script src="{% static 'portfolio/portfolio.js' %}" type="text/javascript"></script>
         <div id="toolbar">
             dylan cox
         </div>
         <div id="social-wrapper">
             <ul id="social">
                 <li class="facebook">
-                    <a href="https://www.facebook.com/dylan.cox.5209" target="_blank">
+                    <a href="https://www.facebook.com/dylan.cox.5209" title="Let's be friends" target="_blank">
                         <img src="{% static 'portfolio/images/fb_gray.png' %}" id="fb_icon" onmouseover="hover(this);" onmouseout="unhover(this);">
                     </a>
                 </li>
                 <li class="linkedin">
-                    <a href="https://www.linkedin.com/in/dylan-cox-9625645b/" target="_blank">
+                    <a href="https://www.linkedin.com/in/dylan-cox-9625645b/" title="Let's work together" target="_blank">
                         <img src="{% static 'portfolio/images/in_gray.png' %}" id="in_icon" onmouseover="hover(this);" onmouseout="unhover(this);">
                     </a>
                 </li>
                 <li class="github">
-                    <a href="https://github.com/Borfhead" target="_blank">
+                    <a href="https://github.com/Borfhead" title="Let's collaborate" target="_blank">
                         <img src="{% static 'portfolio/images/gh_gray.png' %}" id="gh_icon" onmouseover="hover(this);" onmouseout="unhover(this);">
                     </a>
                 </li>
             </div>
         </div>
         
+        <div id="about">
+            <div class = "title">About</div>
+        </div>
+        <div id="recent-projects">
+            <div class = "title">Recent Projects <a class = "btn">View All Projects</a></div>
+        </div>
+        <div id = "resume">
+            <div class = "title">Resume <a class="btn" href="{{ MEDIA_URL}}/media/Resume/Resume.pdf" target="_blank">Download Resume</a></div> 
+            <iframe frameborder= '0' scrolling='no' width='800px' height="1800px" src="https://docs.google.com/document/d/1jCnboDor4f4T_jGhAA5ZI4ZEypr2qdm0G2obyF0F9R4/pub?embedded=true"></iframe>
+        </div>
+        
+    <script src="{% static 'portfolio/portfolio.js' %}" type="text/javascript"></script>
     </body>
 </html>

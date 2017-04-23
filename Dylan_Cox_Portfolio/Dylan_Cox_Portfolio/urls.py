@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.views.static import serve
 
 urlpatterns = [
-    url(r'^$', include('portfolio.urls')),
+    url(r'^', include('portfolio.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 if settings.DEBUG:

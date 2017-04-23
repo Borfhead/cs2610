@@ -6,4 +6,5 @@ from . import views
 app_name = 'portfolio'
 urlpatterns = [
     url(r'^$', views.index),
+    url(r'^projects/', views.projects_index),
 ]

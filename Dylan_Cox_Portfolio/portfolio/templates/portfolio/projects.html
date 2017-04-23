@@ -2,14 +2,14 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>Dylan Cox</title>
+        <title>Projects</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
         <div id="toolbar">
-            <a class = "home-link" href="/" title = "Home">dylan cox</a>
+            <a class = "home-link" href="https://cs2610-dylancox.c9users.io/" title = "Home">dylan cox</a>
         </div>
         <div id="social-wrapper">
             <ul id="social">
@@ -30,17 +30,17 @@
                 </li>
             </div>
         </div>
+
+        <div class="top_of_page">
+            {% for project in projects_list %}
+                <div class = "content_wrapper">
+                    <div class = "title">{{project.name}} <a class="btn" href={{project.git_link}} target="_blank">View Source</a></div>
+                    <div class = "sub_title">{{project.language}}</div>
+                    <div class = "project_description"> {{project.description}}</div>
+                </div>
+            {% endfor %}
+        </div>
         
-        <div id="about" class="top_of_page content_wrapper">
-            <div class = "title">About</div>
-        </div>
-        <div id="recent-projects" class = "content_wrapper">
-            <div class = "title">Recent Projects <a class = "btn" href="/projects">View All Projects</a></div>
-        </div>
-        <div id = "resume" class="content_wrapper">
-            <div class = "title">Resume <a class="btn" href="{{ MEDIA_URL}}/media/Resume/Resume.pdf" target="_blank">Download Resume</a></div> 
-            <iframe frameborder= '0' scrolling='no' width='800px' height="1800px" src="https://docs.google.com/document/d/1jCnboDor4f4T_jGhAA5ZI4ZEypr2qdm0G2obyF0F9R4/pub?embedded=true"></iframe>
-        </div>
         
     <script src="{% static 'portfolio/portfolio.js' %}" type="text/javascript"></script>
     </body>

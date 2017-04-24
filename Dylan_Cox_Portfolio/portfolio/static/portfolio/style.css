@@ -48,7 +48,7 @@
 }
 
 #recent-projects{
-    height: 800px;
+    background-color: #d4e3ec;
 }
 
 #resume{
@@ -62,8 +62,10 @@
 .btn{
     float:right;
     font-size: 12px;
+    font-family: Montserrat, sans-serif;
     border: 2px solid;
     border-radius: 20px;
+    border-color: black;
     padding: 10px;
     background-color: #800000;
     color: white;
@@ -80,15 +82,23 @@
     font-size: 35px;
     text-align: left;
     padding: 15px;
+    padding-bottom: 100px;
     letter-spacing: 5px;
     font-weight: 100;
 }
 
+
 .sub_title{
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     padding-left: 30px;
     font-weight: 100;
+}
+
+.project_title{
+    font-size: 25px;
+    text-align: left;
+    padding: 10px;
 }
 
 .project_description{
@@ -99,8 +109,15 @@
     padding: 20px;
 }
 
-.content_wrapper{
+
+.bottom_border{
     border-bottom: 1px solid;
+    padding-bottom: 30px;
+}
+
+.content_wrapper{
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .home-link, .home-link:visited{
@@ -109,7 +126,7 @@
 }
 
 body{
-    font-family: Montserrat, sans-serif;
+    font-family: Open Sans, sans-serif;
     text-align: center;
     margin: auto;
     background-color: #f6f6f6;

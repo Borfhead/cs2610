@@ -14,6 +14,7 @@ class project(models.Model):
     language = models.CharField(max_length=255)
     description = models.TextField()
     git_link = models.CharField(max_length=255)
+    pub_date = models.DateTimeField()
     
     def __str__(self):
         return self.name

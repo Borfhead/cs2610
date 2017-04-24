@@ -32,14 +32,17 @@
             </div>
         </div>
 
-        <div class="top_of_page content_wrapper">
-            {% for project in projects_list %}
-                <div class = "bottom_border">
-                    <div class = "project_title">{{project.name}} <a class="btn" href={{project.git_link}} target="_blank">View Source</a></div>
-                    <div class = "sub_title">{{project.language}}</div>
-                    <div class = "project_description"> {{project.description}}</div>
-                </div>
-            {% endfor %}
+        <div class = "top_of_page">
+            <div class ="title">Projects</div>
+            <div class="content_wrapper">
+                {% for project in projects_list %}
+                    <div class = "bottom_border">
+                        <div class = "project_title">{{project.name}} <a class="btn" href={{project.git_link}} target="_blank">View Source</a></div>
+                        <div class = "sub_title">{{project.language}}</div>
+                        <div class = "project_description"> {{project.description}}</div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
         
         

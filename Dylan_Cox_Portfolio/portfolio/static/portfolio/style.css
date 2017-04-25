@@ -44,7 +44,7 @@
 }
 
 #about{
-    height: 400px;
+    font-size: 20px;
 }
 
 #recent-projects{
@@ -53,6 +53,7 @@
 
 #resume{
     margin: auto;
+    background-color: white;
 }
 
 .top_of_page{
@@ -117,8 +118,9 @@
 }
 
 .content_wrapper{
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 25%;
+    padding-right: 25%;
+    min-width: 300px;
 }
 
 .home-link, .home-link:visited{
@@ -129,6 +131,7 @@
 body{
     font-family: Open Sans, sans-serif;
     text-align: center;
+    display: block;
     margin: auto;
     background-color: #f6f6f6;
 }
